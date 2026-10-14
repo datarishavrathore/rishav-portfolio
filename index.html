@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rishav Rathore | Sr Data Scientist</title>
+<style>
+:root{
+  --bg:#07060f; --text:#eef0ff; --muted:#a9acd0; --accent:#ff6b4a; --teal:#3fe0c5; --line:rgba(160,170,255,.18); --card:rgba(18,16,40,.62);
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+:root[data-theme="light"]{--bg:#f3f2fb;--text:#16142b;--muted:#4d4b70;--accent:#d2411f;--teal:#0a8f7b;--line:rgba(40,40,120,.2);--card:rgba(255,255,255,.7)}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#f3f2fb;--text:#16142b;--muted:#4d4b70;--accent:#d2411f;--teal:#0a8f7b;--line:rgba(40,40,120,.2);--card:rgba(255,255,255,.7)}}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Space Grotesk","Segoe UI",system-ui,sans-serif;line-height:1.6}
+#galaxy{position:fixed;inset:0;width:100%;height:100%;z-index:0}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;backdrop-filter:blur(8px);background:linear-gradient(var(--bg),transparent)}
+nav b{font-weight:700;letter-spacing:.02em}
+nav div{display:flex;gap:22px;font-size:.95rem}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover,nav a:focus-visible{color:var(--text)}
+main{position:relative;z-index:1}
+section{min-height:100vh;padding:110px 8vw 70px;display:flex;flex-direction:column;justify-content:center}
+#hero h1{font-size:clamp(2.6rem,8vw,6rem);line-height:1.02;margin:0;font-weight:700;text-shadow:0 0 28px rgba(120,130,255,.55)}
+#hero .role{font-size:clamp(1.2rem,3vw,2rem);color:var(--teal);margin:14px 0 6px}
+#hero p{max-width:52ch;color:var(--muted);font-size:1.1rem}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.btn{padding:13px 24px;border-radius:8px;text-decoration:none;font-weight:600;border:1px solid var(--line);color:var(--text)}
+.btn.primary{background:#1a5fb4;border-color:#1a5fb4;color:#fff}
+.btn:hover,.btn:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+h2{font-size:clamp(1.8rem,4vw,2.8rem);margin:0 0 28px}
+.wrap{max-width:1000px;width:100%}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;backdrop-filter:blur(6px)}
+.card h3{margin:0 0 8px;font-size:1.2rem}
+.card p{margin:0 0 12px;color:var(--muted);font-size:.97rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font-size:.8rem;padding:3px 10px;border-radius:20px;border:1px solid var(--line);color:var(--teal)}
+.card a{color:var(--accent);text-decoration:none;font-weight:600;margin-right:14px;font-size:.95rem}
+.res{font-weight:600;color:var(--text)!important}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.skills h3{font-size:1rem;margin:0 0 10px;color:var(--teal)}
+#about p{max-width:62ch;color:var(--muted);font-size:1.1rem}
+#contact a.big{font-size:clamp(1.3rem,3vw,2rem);color:var(--text);word-break:break-all}
+footer{position:relative;z-index:1;text-align:center;padding:30px;color:var(--muted);font-size:.9rem}
+@media (max-width:600px){nav div{gap:12px;font-size:.85rem}section{padding:100px 6vw 60px}}
+</style>
+</head>
+<body>
+<canvas id="galaxy" aria-hidden="true"></canvas>
+<nav>
+  <b>Rishav Rathore</b>
+  <div><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+</nav>
+<main>
+<section id="hero">
+  <h1>Hi. Rishav Rathore.</h1>
+  <div class="role">Sr Data Scientist</div>
+  <p>Welcome to my corner of the Universe. I turn messy data into models that ship and decisions that stick.</p>
+  <div class="btns">
+    <a class="btn primary" href="#projects">View Projects</a>
+    <a class="btn" href="#contact">Download Resume</a>
+  </div>
+</section>
+
+<section id="about"><div class="wrap">
+  <h2>About me</h2>
+  <p>I'm a Senior Data Scientist who builds machine learning systems from raw data to production. I work across forecasting, NLP and generative AI, and I care most about models that people actually use.</p>
+  <p>Replace this paragraph with your years of experience, your domain and what you are looking for next.</p>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card"><h3>Customer Churn Prediction</h3><p>Problem: reduce subscriber loss. Approach: gradient boosting with SHAP explanations. Result: add your metric here (e.g. +18% retention).</p><div class="tags"><span>Python</span><span>XGBoost</span><span>SHAP</span></div><br><a href="#">Live demo</a><a href="#">GitHub</a></div>
+    <div class="card"><h3>RAG Document Assistant</h3><p>Problem: slow search across internal PDFs. Approach: embeddings + vector DB + LLM. Result: add your latency or accuracy number.</p><div class="tags"><span>LangChain</span><span>FAISS</span><span>FastAPI</span></div><br><a href="#">Live demo</a><a href="#">GitHub</a></div>
+    <div class="card"><h3>Demand Forecasting</h3><p>Problem: stock-outs and overstock. Approach: Prophet and LSTM ensemble. Result: add your MAPE or cost saving here.</p><div class="tags"><span>Time series</span><span>PyTorch</span><span>MLflow</span></div><br><a href="#">Live demo</a><a href="#">GitHub</a></div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="card"><h3>Languages</h3><div class="tags"><span>Python</span><span>SQL</span><span>R</span></div></div>
+    <div class="card"><h3>ML and DL</h3><div class="tags"><span>scikit-learn</span><span>PyTorch</span><span>TensorFlow</span><span>XGBoost</span></div></div>
+    <div class="card"><h3>GenAI</h3><div class="tags"><span>LLMs</span><span>RAG</span><span>HuggingFace</span><span>LangChain</span></div></div>
+    <div class="card"><h3>MLOps and Cloud</h3><div class="tags"><span>Docker</span><span>MLflow</span><span>AWS</span><span>Airflow</span></div></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p style="color:var(--muted)">Open to senior data science roles and consulting. Say hello:</p>
+  <a class="big" href="mailto:rishav@example.com">rishav@example.com</a>
+  <div class="btns">
+    <a class="btn" href="#">LinkedIn</a><a class="btn" href="#">GitHub</a><a class="btn" href="#">Kaggle</a>
+  </div>
+</div></section>
+</main>
+<footer>© Rishav Rathore</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  var canvas=document.getElementById('galaxy');
+  if(!window.THREE){return;}
+  var renderer=new THREE.WebGLRenderer({canvas:canvas,alpha:true,antialias:false});
+  renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+  var scene=new THREE.Scene();
+  var camera=new THREE.PerspectiveCamera(60,1,0.1,100);
+  camera.position.set(0,2.6,4.6);camera.lookAt(0,0,0);
+
+  var P=window.matchMedia('(max-width:600px)').matches?45000:90000;
+  var pos=new Float32Array(P*3),col=new Float32Array(P*3);
+  var inner=new THREE.Color('#ff6b4a'),outer=new THREE.Color('#3b4dff'),mid=new THREE.Color('#3fe0c5');
+  var R=5,B=4,SP=0.35,RP=3.2;
+  for(var i=0;i<P;i++){
+    var r=Math.pow(Math.random(),1.6)*R;
+    var arm=(i%B)/B*Math.PI*2;
+    var a=arm+r*SP*2.2;
+    var rnd=function(){return Math.pow(Math.random(),RP)*(Math.random()<.5?1:-1)*0.35*r};
+    pos[i*3]=Math.cos(a)*r+rnd();
+    pos[i*3+1]=rnd()*0.5;
+    pos[i*3+2]=Math.sin(a)*r+rnd();
+    var c=inner.clone();
+    var t=r/R;
+    if(t<.5){c.lerp(mid,t*2)}else{c=mid.clone().lerp(outer,(t-.5)*2)}
+    col[i*3]=c.r;col[i*3+1]=c.g;col[i*3+2]=c.b;
+  }
+  var g=new THREE.BufferGeometry();
+  g.setAttribute('position',new THREE.BufferAttribute(pos,3));
+  g.setAttribute('color',new THREE.BufferAttribute(col,3));
+  var m=new THREE.PointsMaterial({size:0.018,sizeAttenuation:true,vertexColors:true,transparent:true,opacity:.9,depthWrite:false,blending:THREE.AdditiveBlending});
+  var pts=new THREE.Points(g,m);scene.add(pts);
+
+  function resize(){var w=innerWidth,h=innerHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();}
+  addEventListener('resize',resize);resize();
+
+  var mx=0,my=0;
+  addEventListener('pointermove',function(e){mx=(e.clientX/innerWidth-.5);my=(e.clientY/innerHeight-.5)});
+  var still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function frame(){
+    if(!still){pts.rotation.y+=0.0014;}
+    camera.position.x+=(mx*1.2-camera.position.x)*0.03;
+    camera.position.y+=(2.6+my*-0.8-camera.position.y)*0.03;
+    camera.lookAt(0,0,0);
+    renderer.render(scene,camera);
+    requestAnimationFrame(frame);
+  }
+  frame();
+})();
+</script>
+</body>
+</html>
